@@ -1,7 +1,7 @@
-// Reasoning: 
-// - I wrote a function which accepts the three integers as arguments
-// - using conditional statements made the most sense to me in order to arrive at one of our three expected outputs
-// - by placing Isosceles last in this order of conditionals, a higher-complexity (nested) conditional statement is avoided by using the process of elimination
+// Reasoning for solution: 
+// - the function accepts the three integers as arguments
+// - by using conditional statements, we arrive at one of our three expected outputs
+// - by placing Isosceles last in this order of conditionals, a higher-complexity conditional statement is avoided by using the process of elimination
 
 'use strict';
 
