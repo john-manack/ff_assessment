@@ -40,6 +40,19 @@ const myLinkedList = {
     }
 }
 
+const myLinkedList2 = {
+    head: {
+        value: 'a',
+        next: {
+            value: 'b',
+            next: {
+                value: 'c',
+                next: null
+            }
+        }
+    }
+}
+
 // Reasoning for solution (below): 
 // - create an array with each value from the linked list
 // - use a while loop to append each value to an empty array, and determine the length of the list
@@ -48,14 +61,19 @@ const myLinkedList = {
 const fifthFromEnd = (linkedList) => {
     let head = linkedList.head
     let arr = [];
-    let length = 0
+    let arrLength = 0
     while (head !== null) {
         arr.push(head.value);
         head = head.next;
-        length ++;
+        arrLength ++;
     }
-    const index = length - 5
-    return arr[index];
+    if (arrLength >= 5) {
+        const index = arrLength - 5;
+        return `The fifth value from the end is: ${arr[index]}`;
+    } else {
+        return 'This linked list is less than five nodes long. Therefore, there is no value fifth from the end.'
+    }
 }
 
-console.log('the value fifth from the end is: ', fifthFromEnd(myLinkedList));
+console.log(fifthFromEnd(myLinkedList));
+console.log(fifthFromEnd(myLinkedList2));
