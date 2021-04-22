@@ -1,4 +1,4 @@
-const defineTriangle = require('./assessment-1');
+const defineTriangle = require('../assessment-1');
 
 test("examines triangle side lengths 1, 2, and 3 to equal 'Scalene'", () => {
     expect(defineTriangle(1,2,3)).toBe('Scalene');
