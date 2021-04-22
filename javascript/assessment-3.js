@@ -40,7 +40,7 @@ const findPrimeFactors = (path) => {
 
 }
 
-// findPrimeFactors(path1);
-// findPrimeFactors(2);
+findPrimeFactors(path1);
+findPrimeFactors(2);
 
 module.exports = findPrimeFactors;
