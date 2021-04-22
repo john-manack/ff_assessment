@@ -5,14 +5,6 @@ using System;
 
 namespace Assessment2
 {
-    internal class Node {
-        internal int data;
-        internal Node next;
-        public Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
     class Program
     {
         static void Main(string[] args)
