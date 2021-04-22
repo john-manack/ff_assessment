@@ -15,10 +15,4 @@ const defineTriangle = (side1, side2, side3) => {
     }
 }
 
-console.log('Should be Scalene: ', defineTriangle(2,3,4));
-console.log('Should be Isosceles: ', defineTriangle(2,3,3));
-console.log('Should be Equilateral: ',defineTriangle(2,2,2));
-console.log('Should be Scalene: ', defineTriangle(4,3,2));
-console.log('Should be Isosceles: ', defineTriangle(3,2,3));
-console.log('Should be Scalene: ', defineTriangle(2,4,3));
-console.log('Should be Isosceles: ', defineTriangle(3,3,2));
+module.exports = defineTriangle;
